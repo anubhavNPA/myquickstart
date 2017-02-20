@@ -2,12 +2,13 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
 import { SomeComponent } from './components/some.component';
 
 const appRoutes: Routes = [
   // Routes without authentication guards
   { path: '', component: SomeComponent },
-  { path: 'home', component: SomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'some', component: SomeComponent }
 
   // Routes with authentication guards
